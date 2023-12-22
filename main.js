@@ -51,7 +51,9 @@ app.get('/me', async (req, res) => {
 bot.on('message',(msg) => {
 
     if (msg.text === '/everyone@YulioPatriocioBot') {
+
        mentions(url)
+       
     }
 
    // bot.sendMessage(msg.chat.id, `${users.join(', ')}`)
