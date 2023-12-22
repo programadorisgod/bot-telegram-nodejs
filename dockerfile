@@ -25,6 +25,9 @@ COPY  --from=build /usr/src/app/node_modules ./node_modules
 
 COPY --from=build /usr/src/app/package*.json ./
 
+ENV token=$token
+ENV users=$users
+
 EXPOSE 4000
 
 CMD [ "pnpm", "start" ]
